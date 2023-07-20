@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    background-image: url('/assets/background-website.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+h1 {
+    margin: auto;
+    border: 3px;
+    text-align: center;
+    width: 50%;
+    padding-top: 30px;
+}
+
+.first-p {
+    margin: auto;
+    border: 3px;
+    text-align: center;
+    width: 60%;
+    padding: 30px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Input and Result Column */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+label {
+    margin-top: 5%;
+}
+
+/* Left-Side */
+.input {
+    border: 10px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(253, 177, 11);
+    width: 100%;
+    height: 400px;
+    align-items: right;
+    align-content: right;
+    padding-left: 50px;
+    padding-bottom: 30px;;
+}
+
+.input-data {
+    width: 90%;
+    margin-bottom: 2%;
+}
+
+.desc {
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 1.6;
+}
+
+/* Right-Side */
+.hasil {
+    border: 10px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(33, 220, 74);
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    padding-bottom: 20px;
+    padding: 110px 0
+}
+
+/* Button */
+.hitung-bmi {
+    background-color: #253ee2;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: grab;
+}
