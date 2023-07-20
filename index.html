@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Kalkulator BMI</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <h1> Kalkulator BMI</h1>
+        <p class="first-p"> Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk tubuh yang menunjang
+            penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat. Bagaimana denganmu?
+            Yuk, hitung sekarang di kalkulator BMI.
+        </p>
+
+        <div class="row">
+            <div class ="column">
+                <div class="input">
+                    <label for="jeniskelamin"> Jenis Kelamin </label>
+
+                    <span class="input-jenis" name="form">
+                        <input type="radio" name="lang" value="Pria" required>Pria
+                        <input type="radio" name="lang" value="Wanita" required>Wanita
+                    </span>
+
+                    <label for="beratbadan"> Berat Badan (kg) </label>
+                    <input class="input-data" type="number" id="weight" placeholder="Input Berat Badan">
+                    
+                    <label for="usiatahun"> Usia (tahun) </label>
+                    <input class="input-data" type="number" id="usia" placeholder="Input Usia">
+
+                    <label for="tinggibadan"> Tinggi Badan (cm) </label>
+                    <input class="input-data" type="number" id="height" placeholder="Input Tinggi Badan">
+
+                    <br>
+                    <span>
+                        <button class="hitung-bmi" id="btn" onclick="myFunction()"> Hitung BMI</button>
+                    </span>
+                </div>
+
+                <div>
+                    <br>
+                    <h3>Keunggulan Fitur</h3>
+                    <p class="desc"> 1. Menghitung berat badan <br>
+                        2. Menentukan kategori berat badan ideal atau tidak<br>
+                        3. Mempersiapkan program penurunan berat badan</p>
+                    
+                    <hr>
+
+                    <p class="desc"> Kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita hamil
+                        atau menyusui tidak boleh mengandalkan pembacaan BMI ini) dan tidak
+                        ada tindakan yang harus diambil berdasarkan nilainya selain berkonsultasi
+                        dengan orang yang memenuhi syarat seperti dokter
+                    </p>
+
+                    <hr>
+
+                    <p class="desc"> Kalkulator akan memberi Anda gambaran tentang perbandingan berat badan Anda
+                        dengan nilai umum. Indeks Massa Tubuh (atau BMI) dihitung sebagai berat badan
+                        Anda (dalam kilogram) dibagi dengan kuadrat tinggi badan Anda (dalam meter)
+                        atau BMI = Kg/M2.
+                    </p>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="hasil">
+                    <h2>Hasil</h2>
+                    <p id="output"></p>
+                    <div class="result-show" id="result"></div>
+                    <p id="result">Hasil Ditampilkan Setelah Mengisi Keseluruhan Data !</p>
+                </div>
+
+                <div>
+                    <br>
+                    <h3>Keterangan</h3>
+                    <p class="desc"> BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan
+                        tubuh dan resiko penyakit seseorang. Anda perlu konsultasi lebih lanjut mengenai
+                        resiko dan kekhawatiran Anda terkait dengan berat badan Anda.
+                    </p>
+                    
+                    <hr>
+
+                    <p class="desc"> Beberapa penyakit yang berasal dari kegemukan<br>
+                        1. Diabetes <br>
+                        2. Hipertensi<br>
+                        3. Sakit Jantung<br>
+                        4. Osteoarthritis
+                    </p>
+                </div>
+            </div>
+        </div>
+        <script src="js/script.js"></script>
+    </body>
+</html>
